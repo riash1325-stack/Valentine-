@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For My Valentine 💖</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #ffe6f0;
+      text-align: center;
+      padding-top: 40px;
+    }
+    .q {
+      font-size: 22px;
+      margin: 20px;
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      margin: 10px;
+    }
+    #no {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="q">Q1: Are you a bug in my life? 🐞</div>
+  <div>Because everything breaks without you 😜</div>
+
+  <div class="q">Q2: Are you an infinite loop?</div>
+  <div>Because I never want to escape you 💕</div>
+
+  <div class="q">Q3: Are you my final commit?</div>
+  <div>Because I want you forever ❤️</div>
+
+  <div class="q"><b>Final Question 💘</b></div>
+  <div class="q">Will you be my Valentine?</div>
+
+  <button onclick="yes()">YES 💖</button>
+  <button id="no" onmouseover="move()">NO 😜</button>
+
+  <script>
+    function yes() {
+      document.body.innerHTML =
+        "<h1>YAYYYY 💕</h1><h2>I knew you’d say YES ❤️</h2>";
+    }
+    function move() {
+      let x = Math.random() * (window.innerWidth - 100);
+      let y = Math.random() * (window.innerHeight - 100);
+      let no = document.getElementById("no");
+      no.style.left = x + "px";
+      no.style.top = y + "px";
+    }
+  </script>
+
+</body>
+</html>
